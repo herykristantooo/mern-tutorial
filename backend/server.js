@@ -19,6 +19,7 @@ app.get('/api/goals', (req, res) => {
 })
 
 app.use('/api/goals', require('./routes/goalRoutes.js'))
+app.use('/api/users', require('./routes/userRoutes.js'))
 
 app.use(errorHandler)
 
